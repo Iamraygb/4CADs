@@ -27,3 +27,23 @@ header {
 #login a {
     padding: 50px 20px;;
 }
+
+header{
+    background-color: #323012;
+    padding: 10px;
+    width: 101%;
+    margin: auto;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+header nav ul li{
+    margin: 20px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
