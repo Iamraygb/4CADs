@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo {
+    display: flex;
+    align-items: last center;
+}
+#logo img {
+    height: 70px;
+}
+#search-bar {
+    flex-grow: 2;
+    margin: 20px;
+    
+
+}
+#search-bar input {
+    width: 100%;
+    padding:10px;
+}
+#login {
+    margin-left: 10px;
+}
+#login a {
+    padding: 50px 20px;;
+}
