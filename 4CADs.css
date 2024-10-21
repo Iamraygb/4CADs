@@ -13,6 +13,7 @@ header {
 #logo {
     display: flex;
     align-items: last center;
+    width: 100px;
 }
 #logo img {
     height: 70px;
@@ -81,12 +82,16 @@ secondbody{
 .information{
     align-items: center;
     background-color: #8d8d8d;
-    background-image:;
-    padding: 30px;
+    background-image: url("4CADs_homepage_image.png");
+    padding: 20px;
     border: solid #000 2px;
     width: 90%;
-    height: 950px;
+    height: 800px;
     border-radius:10px;
     font-size: 20px;
     
+}
+.navoptions{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
 }
