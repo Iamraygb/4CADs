@@ -1,5 +1,6 @@
 body{
     background-color: #323012;
+    width: 100%
 }
 header {
     display: flex;
@@ -47,17 +48,20 @@ header nav ul li a{
     font-size: 15px;
 }
 
-secondbody{
-    background-color: #bdbdbd;
+.secondbody{
+    background-color: #323012;
     
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     margin: 0;
 }
 .container {
     
-    gap: 150px;
+    gap: 110px;
+    display: flex;
+    width: 100%;
+    
 }
 
 .box {
@@ -68,24 +72,24 @@ secondbody{
     text-align: center;
     font-weight: bold;
     color: #ffffff;
-    
+    margin: 20px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    width: 453px;
+    width: 100%;
     display: inline-block;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: auto;
     border-radius: 5px;
     font-size: 30px;
 }
 .information{
     align-items: center;
     background-color: #8d8d8d;
-    background-image: url("4CADs_homepage_image.png");
+    background-image: url("Images/4CADs\ homepage\ image.png");
     padding: 20px;
     border: solid #000 2px;
-    width: 90%;
+    width: auto;
     height: 800px;
     border-radius:10px;
     font-size: 20px;
