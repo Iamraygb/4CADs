@@ -1,12 +1,12 @@
 body{
-    background-color: #323012;
+    background-image:URL("Images/3.svg") ;
     width: 100%
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #323012;
+    background-image:URL("Images/3.svg");
     padding: 0px;
     width: 100%;
     margin: 0px;
@@ -58,24 +58,25 @@ header nav ul li a{
 }
 .container {
     
-    gap: 110px;
+    gap: 20px;
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     
 }
 
 .box {
-    background-color: #423f17;
+    background-image: url("Images/4CADs\ homepage\ image.png");
+    background-size: cover;
     padding: 20px;
     border: 2px solid #000; 
     border-style: ridge;
     text-align: center;
     font-weight: bold;
     color: #ffffff;
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
+    width: 150%;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -87,10 +88,11 @@ header nav ul li a{
     align-items: center;
     background-color: #8d8d8d;
     background-image: url("Images/4CADs\ homepage\ image.png");
+    background-size: cover;
     padding: 20px;
     border: solid #000 2px;
     width: auto;
-    height: 800px;
+    height: 400px;
     border-radius:10px;
     font-size: 20px;
     
