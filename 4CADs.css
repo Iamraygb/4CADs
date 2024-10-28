@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -36,11 +41,16 @@
     width: 20px;
     height: 20px;
 }
+.search-bar:focus {
+    width: 150px; /* Expands on focus */
+    outline: none;
+}
 
 body{
     background-image:URL("Images/3.svg") ;
     width: 100%
 }
+<<<<<<< Updated upstream
 header {
     display: flex;
     justify-content: space-between;
@@ -58,6 +68,8 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+=======
+>>>>>>> Stashed changes
 .secondbody{
     background-color: #323012;
     display: flex;
