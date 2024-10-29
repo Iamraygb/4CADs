@@ -8,14 +8,19 @@
     align-items: center;
     padding: 10px;
     background-color: #ffffff;
+    width: 100vw;
 }
 /* Logo Styling */
 .logo img {
     width: 50px; 
     transition: width 0.3s ease; /* Makes resizing smoother */
+    margin-left: 10px;
+    position: absolute;
+    position: left;
 }
 .logo img:hover {
     width: 60px; /* Logo expands on hover */
+    
 }
 /* Search Container Styling */
 .search-container {
@@ -38,8 +43,7 @@
     padding: 5px;
 }
 .search-icon {
-    width: 20px;
-    height: 20px;
+    width: 150px;
 }
 .search-bar:focus {
     width: 150px; /* Expands on focus */
@@ -50,7 +54,6 @@ body{
     background-image:URL("Images/3.svg") ;
     width: 100%
 }
-<<<<<<< Updated upstream
 header {
     display: flex;
     justify-content: space-between;
@@ -68,10 +71,7 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-=======
->>>>>>> Stashed changes
 .secondbody{
-    background-color: #323012;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +141,7 @@ footer {
     width: 100%;
     margin-top: 30px;
     justify-content: space-between;
-    margin-left: 20px;
+    
 }
 
 .ParaImage{
