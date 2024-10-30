@@ -6,20 +6,22 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #ffffff;
-    width: 100vw;
+    padding: 20px;
+    background-color:#f2f2f0;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
 }
 /* Logo Styling */
 .logo img {
-    width: 50px; 
+    width: 150px; 
     transition: width 0.3s ease; /* Makes resizing smoother */
-    margin-left: 10px;
-    position: absolute;
-    position: left;
+    position: relative;
+    left: 30px;
 }
 .logo img:hover {
-    width: 60px; /* Logo expands on hover */
+    width: 180px; /* Logo expands on hover */
     
 }
 /* Search Container Styling */
@@ -27,14 +29,19 @@
     display: flex;
     align-items: center;
     margin-left: auto; /* Pushes search bar to the right */
+    font-size: larger;
 }
 .search-bar {
-    width: 0; /* Hidden initially */
+    width: 160px; /* shorter width initially */
+    height: 43px;
     padding: 5px;
-    border: none;
-    border-radius: 3px;
+    border: 1px solid #b0ae87;
+    border-radius: 40px;
     transition: width 0.5s ease;
-    background-color: #fff;
+    background-color: #ffffff;
+    position: relative;
+    left: 90px;
+    
 }
 .search-btn {
     background: none;
@@ -43,31 +50,31 @@
     padding: 5px;
 }
 .search-icon {
-    width: 150px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:12px ;
+    top: 3.5px;
+    z-index: 1;
 }
 .search-bar:focus {
-    width: 150px; /* Expands on focus */
+    width: 700px; /* then it expans on focus, as in when clicked*/
     outline: none;
 }
 
-body{
-    background-image:URL("Images/3.svg") ;
-    width: 100%
-}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image:URL("Images/3.svg");
     padding: 0px;
     width: 100%;
     margin: 0px;
-    width: 100vw;
     
 }
 .title{
-    color: #525252;
-    font-size: 30px;
+    color: #000000;
+    font-size:large;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -106,10 +113,10 @@ header {
     border-radius: 5px;
     font-size: 20px;
 }
-/*.information{
+.information{
     align-items: center;
     background-color: #8d8d8d;
-    background-image: url("Images/4CADs\ homepage\ image.png");
+    background-image: url("Images/4CADs/ homepage/image.png");
     background-size: cover;
     padding: 20px;
     border: solid #000 2px;
@@ -118,7 +125,7 @@ header {
     border-radius:10px;
     font-size: 20px;
     
-}*/
+}
 
 .paragraph {
     margin-top: 30px;
@@ -131,7 +138,7 @@ header {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #80807b;
     padding: 15px;
     display: flex;
     text-align: right;
@@ -148,4 +155,7 @@ footer {
     display: flex; 
     height: 50px;
     gap: 30px;
+}
+.backvideo{
+    object-fit: cover;
 }

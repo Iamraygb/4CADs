@@ -53,3 +53,71 @@ h2 {
     font-size: 14px;
     font-weight: bold;
 }
+#background{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 170px;
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color:#f2f2f0;
+    width: 100%;
+    height: 70px;
+}
+/* Logo Styling */
+.logo img {
+    width: 150px; 
+    transition: width 0.3s ease; /* Makes resizing smoother */
+    position: relative;
+    left: 30px;
+}
+.logo img:hover {
+    width: 180px; /* Logo expands on hover */
+    
+}
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes search bar to the right */
+    font-size: larger;
+}
+.search-bar {
+    width: 160px; /* shorter width initially */
+    height: 43px;
+    padding: 5px;
+    border: 1px solid #b0ae87;
+    border-radius: 40px;
+    transition: width 0.5s ease;
+    background-color: #ffffff;
+    position: relative;
+    left: 90px;
+    
+}
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.search-icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:12px ;
+    top: 3.5px;
+    z-index: 1;
+}
+.search-bar:focus {
+    width: 700px; /* then it expans on focus, as in when clicked*/
+    outline: none;
+}
