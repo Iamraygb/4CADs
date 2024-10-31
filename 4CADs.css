@@ -196,13 +196,8 @@ footer {
     color: #000;
 }
 .footermage{
-    display: flex;
-    justify-content: center;
-    left: 750px;
-    top: 1610px;
-   
+    
     width: 200px;
-    object-fit: cover;
 }
 .backvideo{
     object-fit: cover;
