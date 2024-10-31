@@ -97,48 +97,104 @@ h2 {
 .box-container {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.box1 {
-    padding: 20px;
-    border: 3px ridge #b0ae87; 
-    border-style: ridge;
-    position: relative;
-    top: 15px;
-    width: 400px;
-    height: 400px;
-    background-image: url();
-    margin: 10px;
-    margin-bottom: 50px;
-    display: inline-block;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    font-family:sans-serif;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.box2 {
+.CONCRETE {
+    background-image: url(Concrete.jpg);
     width: 300px;
     height: 300px;
     background-color: white;
     border: 2px solid black;
     margin: 10px;
     display: inline-block;
-    justify-content: center;
+    text-align: center;
+    line-height: 200px;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
 }
+
+.STEEL {
+    background-image: url(Steel.jpg);
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ALUMINIUM {
+    background-image: url(Aluminium.jpg);
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.RECYCLED-PLASTIC {
+    background-image: url(Recycledplastic.jpg); 
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.WOOD {
+    background-image: url(Wood.jpg);
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.BAMBOO {
+    background-image: url(Bamboo.jpg);
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 #background{
     display: flex;
     position: absolute;
@@ -148,5 +204,4 @@ a{
     left: 0px;
     max-height: 100%;
     object-fit: cover;
-
 }
