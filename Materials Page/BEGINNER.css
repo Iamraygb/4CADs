@@ -17,6 +17,7 @@ body {
     display: inline;
     position: relative;
     bottom: 20px;
+    z-index: -1;
 }
 .navbar {
     display: flex;
@@ -27,7 +28,11 @@ body {
     height: 70px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 0.8s;
+    transition:  1s ease;
+}
+.navbar:hover{
+    background-color:#ffffff;
 }
 /* Logo Styling */
 .logo img {
@@ -39,6 +44,28 @@ body {
 .logo img:hover {
     width: 180px; /* Logo expands on hover */
     
+}
+.divabout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight:lighter;
+    font-family: sans-serif;
+    font-size: medium;
+    transition: 0.5s ease;
+    position: relative;
+    left: 60px;
+}
+
+.aboutus:hover{
+color: #35330d;
 }
 /* Search Container Styling */
 .search-container {
@@ -199,13 +226,53 @@ a{
 }
 
 #background{
-    display: flex;
     position: absolute;
-    z-index: -1;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -3;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video covers the full area */
+}
+footer {
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     width: 100%;
-    height: 100vh;
-    top: 170px;
-    left: 0px;
-    max-height: 100%;
-    object-fit: cover;
+    height: 70px;
+    margin-top: 30px;
+    justify-content: space-between;
+    transition: 0.5s ease;
+}
+.footer:hover{
+    background-color:#f2f2f0 ;
+}
+.ParaImage{
+    display: flex; 
+    height: 50px;
+    gap: 30px;
+    display: flex;
+    
+}
+.contact-pics{
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+.footermage{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
 }
