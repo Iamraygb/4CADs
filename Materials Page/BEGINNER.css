@@ -97,16 +97,15 @@ h2 {
 .box-container {
     width: 100%;
     margin: 0 auto;
-    justify-content: space-evenly;
 }
 
 .WOOD {
     background-image: url(/Images/Wood.png);
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     background-color: white;
-    border: 2px solid black;
+    border: 2px ridge black;
     margin: 10px;
     display: inline-block;
     text-align: center;
@@ -114,13 +113,14 @@ h2 {
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    border-radius: 2px;
 }
 
 .STEEL {
     background-image: url(Steel.jpg);
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     background-color: white;
     border: 2px solid black;
     margin: 10px;
@@ -135,8 +135,8 @@ h2 {
 .ALUMINIUM {
     background-image: url(Aluminium.jpg);
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     background-color: white;
     border: 2px solid black;
     margin: 10px;
@@ -150,8 +150,8 @@ h2 {
 
 .RECYCLED-PLASTIC {
     background-image: url(Recycledplastic.jpg); 
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     background-color: white;
     border: 2px solid black;
     margin: 10px;
@@ -165,8 +165,8 @@ h2 {
 
 .CONCRETE {
     background-image: url(Concrete.jpg);
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     background-color: white;
     border: 2px solid black;
     margin: 10px;
@@ -180,8 +180,8 @@ h2 {
 
 .BAMBOO {
     background-image: url(Bamboo.jpg);
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     background-color: white;
     border: 2px solid black;
     margin: 10px;
@@ -203,6 +203,7 @@ a{
     position: absolute;
     z-index: -1;
     width: 100%;
+    height: 100vh;
     top: 170px;
     left: 0px;
     max-height: 100%;
