@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: rgb(87, 87, 87);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+}
+
+.Aboutp{
+    padding: 30px 150px; /*Change the 300 according to the amount of text*/ 
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0px;
+}
+
+.Aboutimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 600px;
+    height: 400px;
+
+}
