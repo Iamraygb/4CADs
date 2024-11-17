@@ -5,17 +5,20 @@
 }
 body {
     font-family:sans-serif;
-    background-color: #373434;
+    background-color: #ffffff;
     text-align: center;
     font-weight: bold;
     z-index: 9;
 }
-.title{
+.beginnertitle{
+
     font-family:sans-serif;
     color: rgb(255, 255, 255);
-    display: flex;
+    width: 100vw;
+    background-color: #ffffff;
+    border: #000000 5px solid;
     display: inline;
-    position: relative;
+    position: sticky 0px;
     bottom: 20px;
     z-index: -1;
 }
@@ -129,12 +132,13 @@ h2 {
 .WOOD {
     background-image: url(/Images/Wood.png);
     background-size: cover;
+    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
     border: 2px ridge black;
     margin: 10px;
-    display: inline-block;
+    display: flec;
     text-align: center;
     line-height: 200px;
     align-items: center;
@@ -146,6 +150,7 @@ h2 {
 .STEEL {
     background-image: url(Steel.jpg);
     background-size: cover;
+    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -162,6 +167,7 @@ h2 {
 .ALUMINIUM {
     background-image: url(Aluminium.jpg);
     background-size: cover;
+    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -178,6 +184,7 @@ h2 {
 .RECYCLED-PLASTIC {
     background-image: url(Recycledplastic.jpg); 
     width: 360px;
+    font-family: sans-serif;
     height: 360px;
     background-color: white;
     border: 2px solid black;
@@ -192,6 +199,7 @@ h2 {
 
 .CONCRETE {
     background-image: url(Concrete.jpg);
+    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -207,10 +215,12 @@ h2 {
 
 .BAMBOO {
     background-image: url(Bamboo.jpg);
+    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 4px;
     margin: 10px;
     display: inline-block;
     text-align: center;
@@ -227,13 +237,13 @@ a{
 
 #background{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+
     min-width: 100vw;
     min-height: 100vh;
     width: auto;
     height: auto;
-    z-index: -3;
+    z-index: -9;
     transform: translate(-50%, -50%);
     object-fit: cover; /* Ensures the video covers the full area */
 }
@@ -250,6 +260,7 @@ footer {
     margin-top: 30px;
     justify-content: space-between;
     transition: 0.5s ease;
+    position: sticky;
 }
 .footer:hover{
     background-color:#f2f2f0 ;

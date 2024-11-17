@@ -27,5 +27,25 @@ h1{
     border-radius: 30px;
     width: 600px;
     height: 400px;
-
+}
+.contact-pics{
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+.footermage{
+    display: flex;
+    justify-content: center;
+    width:
+    position: relative;
+    right: 60px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 500px;
+}
+.footer:hover{
+    background-color:#f2f2f1 ;
 }

@@ -7,12 +7,12 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color:#ffffff;
+    background-color:#f2f2f1;
     width: 100%;
     height: 70px;
     position: sticky;
     top: 0;
-    z-index: 0.8s;
+    z-index: 2;
     transition:  1s ease;
 }
 
@@ -39,17 +39,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #ffffff;
     font-weight:lighter;
     font-family: sans-serif;
     font-size: medium;
     transition: 0.5s ease;
     position: relative;
     left: 60px;
+    background-color: #6d6a39;
+    opacity: 0.8;
+    border-radius: 12px;
+    font-weight: bolder;
+    width: 100px; height: 20px;
+    transition: all ease 0.3;
 }
 
 .aboutus:hover{
-color: #35330d;
+
+    font-size: 15px;
+    opacity: 0.7;
 }
 
 /* Search Container Styling */
@@ -64,7 +72,8 @@ color: #35330d;
     width: 160px; /* shorter width initially */
     height: 43px;
     padding: 5px;
-    border: 1px solid #b0ae87;
+    border: 1px solid #6d6a39 ;
+    opacity: 0.8;
     border-radius: 40px;
     transition: width 0.5s ease;
     background-color: #ffffff;
@@ -102,10 +111,13 @@ header {
     
 }
 .title{
-    color: #000000;
+    color: #373629;
     font-size: large;
     font-family:sans-serif;
     font-weight: 700px;
+    position: relative;
+    bottom: 110px;
+    z-index: -1;
 }
 
 .secondbody{
@@ -115,13 +127,15 @@ header {
     align-items: center;
     height: auto;
     margin: 0;
+    z-index: -1;
 }
 .container {
     
     display: flex;
     /*width: 100%;*/
     gap: 50px;
-    margin-top: 35px;
+    position: relative;
+    bottom: 60px;
     
 }
 
@@ -198,7 +212,12 @@ header {
     font-size: 18px;
     padding-top: 30px;
 }
-
+.notsure{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:justify;
+    width: 500px;
+}
 footer {
     background-color: #ffffff;
     padding: 15px;
@@ -208,13 +227,15 @@ footer {
     font-family: Arial, sans-serif;
     font-size: 16px;
     width: 100%;
-    height: 70px;
+    height: 60px;
     margin-top: 30px;
     justify-content: space-between;
     transition: 0.5s ease;
+    position: relative;
+    top: 70px;
 }
 .footer:hover{
-    background-color:#f2f2f0 ;
+    background-color:#f2f2f1 ;
 }
 
 .ParaImage{
@@ -232,10 +253,16 @@ footer {
 .footermage{
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 150px;
+    position: relative;
+    right: 60px;
 }
 .backvideo{
-    object-fit: cover;
+    
+    position: relative;
+    bottom: 140px;
+    z-index: -1;
+    
 }
 .footer{
     display: flex;
@@ -246,12 +273,7 @@ a{
     color: bl;
 }
 
-.Aboutfooter{
-    display: flex;
-    align-items: center;
-    bottom: 0;
-    position: fixed;
-}
+
 
 .Aus{
     color: rgb(87, 87, 87);
