@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wood</title>
+    <title>accordions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
+    <style>
+        .sticky-title {
+          width: 100%; /* Ensures it spans the full width */
+          z-index: 1; /* Keeps it above other elements */
+        }
+      </style>
   </head>
 </head>
 <body>
     <section id=topics>
+        <div  class="text-center sticky-title bg-body-secondary p-2 text-black  text-center py-1 position-fixed top-0" 
+        style="--bs-bg-opacity: .5;">
+            <h2 class="display-5 fw-normal"> WOOD</h2> 
+        </div>
         <div class="container-md">
-            <div  class="text-center">
-                <h2> WOOD</h2>
-            </div>
             
-
             <!-- <div class="col-lg-6"></div> -->
                 
+            <!-- row my 5-g g-5 ---- this is for alignment, if any doubt, ask Damaris -->
             
-            <div class="row my 5-g g-5 justify-content-around align-items-center">
+            <div class="row my 5-g g-5 align-items-center">
                 <div class="col-6 col-lg-4.5">
-                    <img src="/Images/Wood.png" class="img-fluid" alt="ebook">
+                    <img src="Wood.png" class="img-fluid border border-dark border-3"  alt="ebook" > 
                 </div>
-                
-                
+
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-normal">DESCRIPTION</h2>
+                  <p class="align-content lead">Wood is a natural, organic material sourced from trees. It's widely used in construction, furniture making,
+                     and crafting due to its strength, versatility, and ease of use.
+                      Different types of wood, such as hardwood and softwood, offer varying properties.</p>
+                </div>
+
                 <!-- accordions  -->
                 <div class="accordion" id="chapters">
                     <div class="accordion-item">
@@ -38,34 +50,32 @@
                         <div id="chapter-1" class="accordion-collape collapse"
                         aria-labelledby="heading-1" data-bs-parent="#chapters">
                             <div class="accordion-body">
-                                 <p>Wood is used in structures (framing, floors, roofs), furniture, cabinetry, tools,
+                                 <p class="lead">Wood is used in structures (framing, floors, roofs), furniture, cabinetry, tools,
                                      and decorative items. It's also a key material for paper production and is commonly 
                                      used in outdoor applications like decking and fencing</p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading-2">
-                                <button class="accordion-button" type="button"
-                                 data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
-                                    Properties
-                                </button>
-                            </h2>
-                            <div id="chapter-2" class="accordion-collape collapse"
-                            aria-labelledby="heading-2" data-bs-parent="#chapters">
-                                <div class="accordion-body">
-                                     <p> : Wood is strong, lightweight, and has good insulating properties. It’s renewable, easy to shape, and offers
-                                         aesthetic appeal with natural grain patterns. However, if not properly treated, 
-                                         it can be susceptible to rot, pests, and warping.</p>
-                                </div>
+                        <h2 class="accordion-header" id="heading-2">
+                          <button class="accordion-button" style="background-color:#b5c5b3de;" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                            <div class="d-flex w-100 align-items-center">
+                              <h4 class="mb-0">Properties</h4>
+                              <small class="text-body-secondary ms-auto me-3 fs-6 lead">With faded secondary text</small>
                             </div>
+                          </button>
+                        </h2>
+                        <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                          <div class="accordion-body">
+                            <p class="lead">Wood is strong, lightweight, and has good insulating properties. It’s renewable, easy to shape, and offers aesthetic appeal with natural grain patterns. However, if not properly treated, it can be susceptible to rot, pests, and warping.</p>
+                          </div>
                         </div>
-                    </div>
+                      </div>
+                      
                     <div class="accordion-item">
                         <div class="accordion-item" id="headng-3">
                             <h2 class="accordion-header" id="heading-3">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button p-4" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-3">
                                     Sustainability
                                 </button>
@@ -73,7 +83,7 @@
                             <div id="chapter-3" class="accordion-collape collapse"
                             aria-labelledby="heading-3" data-bs-parent="#chapters">
                                 <div class="accordion-body">
-                                     <p> Wood is a renewable resource, making it environmentally friendly when sourced from responsibly managed forests.
+                                     <p class="lead"> Wood is a renewable resource, making it environmentally friendly when sourced from responsibly managed forests.
                                          It stores carbon, contributing to lower greenhouse gas emissions. However, unsustainable logging and deforestation 
                                          can have negative environmental impacts.</p>
                                 </div>
@@ -91,10 +101,10 @@
                             <div id="chapter-4" class="accordion-collape collapse"
                             aria-labelledby="heading-4" data-bs-parent="#chapters">
                                 <div class="accordion-body">
-                                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod, maxime 
+                                     <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod, maxime 
                                         facilis error, quidem tempore, earum ex dicta porro quos quis consectetur 
-                                        suscipit maiores accusantium. Molestias nostrum ipsum odit ipsa!</p>
-                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod, maxime 
+                                        suscipit maiores accusantium. Molestias nostrum ipsum odit ipsa!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod, maxime 
                                         facilis error, quidem tempore, earum ex dicta porro quos quis consectetur 
                                         suscipit maiores accusantium. Molestias nostrum ipsum odit ipsa!</p>
                                 </div>
