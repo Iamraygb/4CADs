@@ -111,7 +111,7 @@ header {
     
 }
 .title{
-    color: #373629;
+    color: #756d0b;
     font-size: large;
     font-family:sans-serif;
     font-weight: 700px;
@@ -213,10 +213,11 @@ header {
     padding-top: 30px;
 }
 .notsure{
-    display: flex;
-    flex-wrap: wrap;
-    text-align:justify;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
     width: 500px;
+    color: #756d0b
 }
 footer {
     background-color: #ffffff;
@@ -250,13 +251,7 @@ footer {
     align-items: center;
     color: #000;
 }
-.footermage{
-    display: flex;
-    justify-content: center;
-    width: 150px;
-    position: relative;
-    right: 60px;
-}
+
 .backvideo{
     
     position: relative;
@@ -267,12 +262,15 @@ footer {
 .footer{
     display: flex;
     align-items: center;
+    
 }
 a{
     text-decoration: none;
-    color: bl;
+    color: black;
 }
-
+.contactus{
+    text-decoration: underline;
+}
 
 
 .Aus{
