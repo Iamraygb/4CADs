@@ -9,13 +9,12 @@
     </style>
     
     <link rel="stylesheet" href="BEGINNER.css">
-    <link rel="stylesheet" href="4CADs.css">
 </head>
 <body>
     <nav class="navbar">
         <!-- Logo Section -->
         <a href="/4CADs.html"><div class="logo"><img src="/Images/Navlogo.png" alt="Logo" id="Logo-img"></div></a>
-        <div class="divabout"><a class="aboutus" href="#">About Us</a></div>
+        <div class="divabout"><a class="aboutus" href="/About_us.html">About Us</a></div>
         <!--Search Section-->
         <div class="search-container">
             <input type="text" placeholder="Search Materials..." class="search-bar">
@@ -24,34 +23,136 @@
             </button>
         </div>
     </nav>
-
-    <video autoplay muted loop id="background" src="/Videos/Video background.mp4"></video>
+    
     <div class="container">
-       <div class="beginnertitle"> <h1>BEGINNER MATERIALS</h1>
+       <div class="title"> <h1>BEGINNER MATERIALS</h1>
     </div>
 
         <div class="box-container">
 
-            <div class="WOOD"> <a href="/Materials Page/Material Content/wood.html"><h3>WOOD</h3></a></div>
-            <div class="STEEL"> <a href="#"> STEEL</a></div>
-            <div class="ALUMINIUM"><a href="#"> ALUMINIUM</a></div>
+            <!--Learn about the properties and uses of pinewood materials.-->
+
+            <a href="/Materials Page/Material Content/wood.html"><div class="PINEWOOD"> <h3>PINEWOOD</h3> <p class="description">Learn about the properties and uses of pinewood materials.</p></div></a>
+            <a href="#"><div class="TEXTILES"> <h3>TEXTILES</h3> <p class="description">Learn about the properties and uses of textiles materials.</p> </div></a>
+            <a href="#"><div class="RUBBER"> <h3>RUBBER</h3> <p class="description">Learn about the properties and uses of rubber materials.</p> </div></a>
+            <a href="#"><div class="CARDBOARD"> <h3>CARDBOARD</h3> <p class="description">Learn about the properties and uses of cardboard materials.</p> </div></a>
 
             <br></br>
 
-            <div class="RECYCLED-PLASTIC">RECYCLED PLASTIC</div>
-            <div class="BAMBOO">BAMBOO</div>
-            <div class="CONCRETE">CONCRETE</div>
+            <div class="BAMBOO"> <a href="/Materials Page/Material Content/wood.html"><h3>BAMBOO</h3></a> <p class="description">Learn about the properties and uses of bamboo materials.</p></div>
+            <div class="CORK"> <a href="#"> CORK</a> <p class="description">Learn about the properties and uses of cork materials.</p> </div>
+            <div class="CLAY"><a href="#"> CLAY</a> <p class="description">Learn about the properties and uses of clay materials.</p> </div>
+            <div class="BASSWOOD"><a href="#"> BASSWOOD</a> <p class="description">Learn about the properties and uses of basswood materials.</p> </div>
+            
 
         </div>
     </div>
     <footer class="footer">
         <div class="ParaImage">
+            <style>
+            
+            .navbar {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                background-color:#f2f2f0;
+                width: 100%;
+                height: 70px;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                transition:  1s ease;
+            }
+            .navbar:hover{
+                background-color:#ffffff;
+            }
+            /* Logo Styling */
+            .logo img {
+                width: 150px; 
+                transition: width 0.3s ease; /* Makes resizing smoother */
+                position: relative;
+                left: 30px;
+            }
+            .logo img:hover {
+                width: 180px; /* Logo expands on hover */
+                
+            }
+            .divabout{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .aboutus{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-weight:lighter;
+                font-family: sans-serif;
+                font-size: medium;
+                transition: 0.5s ease;
+                position: relative;
+                left: 60px;
+                background-color: #6d6a39;
+                opacity: 0.8;
+                border-radius: 12px;
+                font-weight: bolder;
+                width: 100px; height: 20px;
+                transition: all ease 0.3;
+            }
+
+            .aboutus:hover{
+                font-size: 15px;
+                opacity: 0.7;
+            }
+
+            /* Search Container Styling */
+            .search-container {
+                display: flex;
+                align-items: center;
+                margin-left: auto; /* Pushes search bar to the right */
+                font-size: larger;
+            }
+            .search-bar {
+                width: 160px; /* shorter width initially */
+                height: 43px;
+                padding: 5px;
+                border: 1px solid #b0ae87;
+                border-radius: 40px;
+                transition: width 0.5s ease;
+                background-color: #ffffff;
+                position: relative;
+                left: 90px;
+                
+            }
+            .search-btn {
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 5px;
+            }
+            .search-icon {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                left:12px ;
+                top: 3.5px;
+                z-index: 1;
+            }
+            .search-bar:focus {
+                width: 700px; /* then it expans on focus, as in when clicked*/
+                outline: none;
+            }
+            </style>
+
             <img class="contact-pics" src="/Images/Whatsaap.png" alt="Img 1">
             <img class="contact-pics" src="/Images/Instagram.png" alt="Img 2">
             <img class="contact-pics" src="/Images/X.png" alt="Img 3">
             <img class="contact-pics" src="/Images/LinkedIn (20).png" alt="Img 4">
             
         </div>
+        
         <img class="footermage" src="/Images/Navlogo.png" alt="logo">
         <a href="#"><p style="text-decoration: underline;" class="contact-pics">Contact Us</p></a>
     </footer>

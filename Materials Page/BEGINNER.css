@@ -10,102 +10,14 @@ body {
     font-weight: bold;
     z-index: 9;
 }
-.beginnertitle{
-
+.title{
     font-family:sans-serif;
-    color: rgb(255, 255, 255);
-    width: 100vw;
-    background-color: #ffffff;
-    border: #000000 5px solid;
+    color: #373629;
+    display: flex;
     display: inline;
-    position: sticky 0px;
+    position: relative;
     bottom: 20px;
     z-index: -1;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color:#f2f2f0;
-    width: 100%;
-    height: 70px;
-    position: sticky;
-    top: 0;
-    z-index: 0.8s;
-    transition:  1s ease;
-}
-.navbar:hover{
-    background-color:#ffffff;
-}
-/* Logo Styling */
-.logo img {
-    width: 150px; 
-    transition: width 0.3s ease; /* Makes resizing smoother */
-    position: relative;
-    left: 30px;
-}
-.logo img:hover {
-    width: 180px; /* Logo expands on hover */
-    
-}
-.divabout{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.aboutus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    font-weight:lighter;
-    font-family: sans-serif;
-    font-size: medium;
-    transition: 0.5s ease;
-    position: relative;
-    left: 60px;
-}
-
-.aboutus:hover{
-color: #35330d;
-}
-/* Search Container Styling */
-.search-container {
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Pushes search bar to the right */
-    font-size: larger;
-}
-.search-bar {
-    width: 160px; /* shorter width initially */
-    height: 43px;
-    padding: 5px;
-    border: 1px solid #b0ae87;
-    border-radius: 40px;
-    transition: width 0.5s ease;
-    background-color: #ffffff;
-    position: relative;
-    left: 90px;
-    
-}
-.search-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-.search-icon {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left:12px ;
-    top: 3.5px;
-    z-index: 1;
-}
-.search-bar:focus {
-    width: 700px; /* then it expans on focus, as in when clicked*/
-    outline: none;
 }
 
 .container {
@@ -125,109 +37,237 @@ h2 {
 }
 
 .box-container {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 90%;
     margin: 0 auto;
 }
 
-.WOOD {
-    background-image: url(/Images/Wood.png);
+.box-container div {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.box-container div:hover {
+    transform: scale(1.05);
+}
+
+.box-container div h3, .box-container div a {
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.box-container div .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 20;
+    text-align: center;
+    text-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.box-container div:hover h3,
+.box-container div:hover a {
+    opacity: 0;
+}
+
+.box-container div:hover .description {
+    opacity: 1;
+    gap: 0px;
+    filter: brightness(100%);
+}
+
+.PINEWOOD {
+    background-image: url(/Images/Pinewood.png);
     background-size: cover;
-    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
-    border: 2px ridge black;
-    margin: 10px;
-    display: flec;
+    display: inline-block;
     text-align: center;
-    line-height: 200px;
+    /*line-height: 200px;*/
     align-items: center;
     font-size: 14px;
     font-weight: bold;
     border-radius: 2px;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+    z-index: 1 ;
 }
 
-.STEEL {
-    background-image: url(Steel.jpg);
+.PINEWOOD:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
+    filter: brightness(50%);
+}
+
+.TEXTILES {
+    background-image: url(/Images/Textile.png);
     background-size: cover;
-    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
-    border: 2px solid black;
     margin: 10px;
     display: inline-block;
     text-align: center;
-    line-height: 200px;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
 }
 
-.ALUMINIUM {
-    background-image: url(Aluminium.jpg);
+.TEXTILES:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
+}
+
+.RUBBER {
+    background-image: url(/Images/Rubber.png);
     background-size: cover;
-    font-family: sans-serif;
     width: 360px;
     height: 360px;
     background-color: white;
-    border: 2px solid black;
     margin: 10px;
     display: inline-block;
     text-align: center;
-    line-height: 200px;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
 }
 
-.RECYCLED-PLASTIC {
-    background-image: url(Recycledplastic.jpg); 
-    width: 360px;
-    font-family: sans-serif;
-    height: 360px;
-    background-color: white;
-    border: 2px solid black;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-    line-height: 200px;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
+.RUBBER:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
 }
 
-.CONCRETE {
-    background-image: url(Concrete.jpg);
-    font-family: sans-serif;
+.CARDBOARD {
+    background-image: url(/Images/Cardboard.png);
+    background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
-    border: 2px solid black;
     margin: 10px;
     display: inline-block;
     text-align: center;
-    line-height: 200px;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.CARDBOARD:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
 }
 
 .BAMBOO {
-    background-image: url(Bamboo.jpg);
-    font-family: sans-serif;
+    background-image: url(/Images/Bamboo.png); 
     width: 360px;
     height: 360px;
     background-color: white;
-    border: 1px solid black;
-    border-radius: 4px;
     margin: 10px;
     display: inline-block;
     text-align: center;
-    line-height: 200px;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.BAMBOO:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
+}
+
+.CORK {
+    background-image: url(/Images/Cork.png);
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.CORK:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
+}
+
+.CLAY {
+    background-image: url(/Images/Clay.png);
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.CLAY:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
+}
+
+.BASSWOOD {
+    background-image: url(/Images/Basswood.png);
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.BASSWOOD:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
 }
 
 a{
@@ -237,17 +277,18 @@ a{
 
 #background{
     position: absolute;
-    top: 60%;
-
+    top: 50%;
+    left: 50%;
     min-width: 100vw;
     min-height: 100vh;
     width: auto;
     height: auto;
-    z-index: -9;
+    z-index: -3;
     transform: translate(-50%, -50%);
-    object-fit: cover; /* Ensures the video covers the full area */
+    object-fit: scale-down; /* Ensures the video covers the full area */
 }
-footer {
+
+.footer {
     background-color: #ffffff;
     padding: 15px;
     display: flex;
@@ -261,6 +302,9 @@ footer {
     justify-content: space-between;
     transition: 0.5s ease;
     position: sticky;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
 }
 .footer:hover{
     background-color:#f2f2f0 ;
@@ -281,9 +325,4 @@ footer {
     display: flex;
     justify-content: center;
     width: 200px;
-}
-
-.footer{
-    display: flex;
-    align-items: center;
 }
