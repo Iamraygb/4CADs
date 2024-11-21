@@ -1,13 +1,15 @@
-let selectednumber=6;
+let selectednumber=9;
+let name= "learner";
+name="Cadalist"
 if(selectednumber>=8 && selectednumber<=10){
-    console.log("Advanced");
-}
-else if(selectednumber>=0 && selectednumber<=5){
-    console.log("Beginner");
+    console.log(`Welcome ${name}! We recommend choosing advanced`);
 }
 else if(selectednumber>=5 && selectednumber<=7){
-    console.log("Intermediate");
+    console.log(`Welcome ${name}! We recommend selecting intermediate`);
+}
+else if(selectednumber>=0 && selectednumber<=4){
+    console.log(`Welcome ${name}! We recommend taking off with beginner`);
 }
 else{
-    console.log("Sorry, this is an invalid response. Please select a number between 0 and 10")
+    console.log("Sorry, you've inputted an invalid response. Please try again or use the scale")
 }
