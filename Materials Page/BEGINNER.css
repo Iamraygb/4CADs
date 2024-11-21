@@ -81,7 +81,7 @@ h2 {
     font-size: 15px;
     opacity: 0;
     transition: opacity 0.3s;
-    z-index: 20;
+    z-index: 2;
     text-align: center;
     text-wrap: wrap;
     display: flex;
@@ -104,21 +104,20 @@ h2 {
 }
 
 .PINEWOOD {
-    background-image: url(/Images/Pinewood.png);
+    background-image: url(/Images/Wood.png);
     background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
+    margin: 10px;
     display: inline-block;
     text-align: center;
-    /*line-height: 200px;*/
     align-items: center;
     font-size: 14px;
     font-weight: bold;
     border-radius: 2px;
     transition: transform 0.3s;
     border: 0px solid rgb(0, 0, 0);
-    z-index: 1 ;
 }
 
 .PINEWOOD:hover {
@@ -169,8 +168,8 @@ h2 {
     border: 2px solid #6d6a39;
 }
 
-.CARDBOARD {
-    background-image: url(/Images/Cardboard.png);
+.RUBBER {
+    background-image: url(/Images/Rubber.png);
     background-size: cover;
     width: 360px;
     height: 360px;
@@ -185,7 +184,7 @@ h2 {
     border: 0px solid rgb(0, 0, 0);
 }
 
-.CARDBOARD:hover {
+.RUBBER:hover {
     transform: scale(1.2);
     border: 2px solid #6d6a39;
 }
@@ -246,6 +245,26 @@ h2 {
 }
 
 .CLAY:hover {
+    transform: scale(1.2);
+    border: 2px solid #6d6a39;
+}
+
+.CARDBOARD {
+    background-image: url(/Images/Cardboard.png);
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.CARDBOARD:hover {
     transform: scale(1.2);
     border: 2px solid #6d6a39;
 }
