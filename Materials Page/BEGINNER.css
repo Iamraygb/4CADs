@@ -10,7 +10,8 @@ body {
     font-weight: bold;
     z-index: 9;
 }
-.title{
+
+/* .title{
     font-family:sans-serif;
     color: #373629;
     display: flex;
@@ -18,11 +19,13 @@ body {
     position: relative;
     bottom: 20px;
     z-index: -1;
+    width: 100vw;
+    background-color: #373629;
 }
 
 .container {
     margin-top: 50px;
-}
+} */
 
 h1 {
     font-size: 24px;
@@ -43,6 +46,7 @@ h2 {
     margin-top: 20px;
     width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .box-container div {
@@ -104,7 +108,7 @@ h2 {
 }
 
 .PINEWOOD {
-    background-image: url(/Images/Wood.png);
+    background-image: url(/Images/Pinewood.png);
     background-size: cover;
     width: 360px;
     height: 360px;
@@ -307,7 +311,7 @@ a{
     object-fit: scale-down; /* Ensures the video covers the full area */
 }
 
-.footer {
+.navbar {
     background-color: #ffffff;
     padding: 15px;
     display: flex;
@@ -325,7 +329,7 @@ a{
     display: flex;
     align-items: center;
 }
-.footer:hover{
+.navbar:hover{
     background-color:#f2f2f0 ;
 }
 .ParaImage{
