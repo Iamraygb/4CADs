@@ -86,6 +86,8 @@
     border: none;
     cursor: pointer;
     padding: 5px;
+    position: relative;
+    bottom: 1px;
 }
 .search-icon {
     width: 100px;
