@@ -195,6 +195,7 @@ h2 {
 
 .BAMBOO {
     background-image: url(/Images/Bamboo.png); 
+    background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -215,6 +216,7 @@ h2 {
 
 .CORK {
     background-image: url(/Images/Cork.png);
+    background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -235,6 +237,7 @@ h2 {
 
 .CLAY {
     background-image: url(/Images/Clay.png);
+    background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -255,6 +258,7 @@ h2 {
 
 .CARDBOARD {
     background-image: url(/Images/Cardboard.png);
+    background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
@@ -275,6 +279,7 @@ h2 {
 
 .BASSWOOD {
     background-image: url(/Images/Basswood.png);
+    background-size: cover;
     width: 360px;
     height: 360px;
     background-color: white;
