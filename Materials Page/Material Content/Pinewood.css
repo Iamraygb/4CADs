@@ -101,3 +101,39 @@
     width: 700px; /* then it expans on focus, as in when clicked*/
     outline: none;
 }
+
+
+
+
+footer {
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    position: sticky;}
+
+    .footer:hover{
+        background-color:#f2f2f0 ;
+    }
+    .ParaImage{
+        display: flex; 
+        height: 50px;
+        gap: 30px;
+        display: flex;
+        
+    }
+    .contact-pics{
+        display: flex;
+        align-items: center;
+        color: #000;}
+    .contactus{
+            text-decoration: underline;
+        }
