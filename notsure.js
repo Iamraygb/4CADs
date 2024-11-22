@@ -1,4 +1,4 @@
-let selectednumber=9;
+let selectednumber=13;
 let name= "learner";
 name="Cadalist"
 if(selectednumber>=8 && selectednumber<=10){
