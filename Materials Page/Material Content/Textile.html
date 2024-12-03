@@ -33,10 +33,16 @@
         <div class="sticky-title text-center p-2 text-black position-fixed" 
      style="background-color: #b2afac; z-index: 1; top: 40px; width: 100%; height: 100px;">
   <div class="previous-link" style="text-align: left; ">
-    <a href="/Materials Page/BEGINNER.html" 
+    <a onclick="history.back()" href="#" class="hoverprev"
        style="text-decoration: underline; color: aliceblue; font-weight: lighter; margin-left: 60px; margin-top: 40px; display: flex; align-items: center; width: 110px; z-index: 50;">
       Previous page
     </a>
+    <style>
+        .hoverprev:hover{
+            transition: all 0.3s ease;
+        transform: scale(1.1);}
+    </style>
+    
   </div>
   <h2 class="display-5" style="font-weight: 600; color: rgb(54, 54, 54); position: relative; bottom: 40px; z-index: -1;">
     TEXTILE
