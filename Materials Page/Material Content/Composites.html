@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composites</title>
+    <link rel="stylesheet" href="RUBBER.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .sticky-title {
+          width: 100%; /* Ensures it spans the full width */
+          z-index: 1; /* Keeps it above other elements */
+        }
+      </style>
+  </head>
+</head>
+<body>
+    <nav class="navbars">
+        <!-- Logo Section -->
+        <a href="/4CADs.html"><div class="logo"><img src="/Images/Navlogo.png" alt="Logo" id="Logo-img"></div></a>
+       <div class="divabout"><a class="aboutus" href="/About_us.html" style="text-decoration: none;">About Us</a></div>
+
+        <!--Search Section-->
+        <div class="search-container">
+            <input type="text" style="font-size:14px ;" placeholder="Search Materials..." class="search-bar">
+            <button class="search-btn" >
+                <img src="/Images/Search icon.svg" alt="Search Icon" class="search-icon">
+            </button>
+        </div>
+    </nav>
+    <section id=topics  style="padding-top: 14vb;">
+        <div class="sticky-title text-center p-2 text-black position-fixed" 
+     style="background-color: #565757; z-index: 1; top: 40px; width: 100%; height: 100px;">
+  <div class="previous-link" style="text-align: left; ">
+    <a onclick="history.back()" href="#" class="hoverprev"
+       style="text-decoration: underline; color: aliceblue; font-weight: lighter; margin-left: 60px; margin-top: 40px; display: flex; align-items: center; width: 110px; z-index: 50;">
+      Previous page
+    </a>
+    <style>
+        .hoverprev:hover{
+            transition: all 0.3s ease;
+        transform: scale(1.1);}
+    </style>
+    
+  </div>
+  <h2 class="display-5" style="font-weight: 600; color: rgb(225, 217, 217); position: relative; bottom: 40px; z-index: -1;">
+    COMPOSITES
+  </h2>
+</div>
+        <!--Everything below header-->
+        <div style="z-index: -1;">
+        <div class="container-md">
+            
+            <!-- <div class="col-lg-6"></div> -->
+                
+            <!-- row my 5-g g-5 ---- this is for alignment, if any doubt, ask Damaris -->
+            
+            <div class="row my 5-g g-5 align-items-center">
+                <div class="col-6 col-lg-4.5 mt-5">
+                    <img src="/Images/Composites.png" class="img-fluid border border-dark border-1" alt="ebook" style="border: 0px; border-radius: 15px; width: 600px; height: 600px;">
+                </div>
+                
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-normal">SUMMARY</h2>
+                  <p class="align-content lead">Composites are materials made by combining two or more distinct materials to create a product with enhanced properties.
+                     These components typically include a matrix (the main material) and a reinforcement (usually fibers or particles) that improves the material's
+                     strength, stiffness, or other performance characteristics. Composites are known for being lightweight yet strong, making them ideal for industries
+                     like aerospace, automotive, and construction. Common examples include fiberglass, carbon fiber, and metal matrix composites. The combination of
+                     materials is carefully designed to ensure that the composite performs better than its individual components, often offering unique benefits such
+                     as corrosion resistance, high strength-to-weight ratios, and increased durability.
+
+                    </p>
+                </div>
+
+                <!-- accordions  -->
+                <!-- applications -->
+                <div class="accordion" id="chapters" style="z-index: 0;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button p-4" style="background-color:#565757;" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                            <div class="d-flex w-100 align-items-center">
+                                <h4 class="mb-0" style="color: rgb(225, 217, 217);;">Application</h4>
+                                <small class="text-body-secondary ms-auto me-3 fs-6 lead">Where to use me?</small>
+                              </div>                    
+                            </button>
+                        </h2>
+                        <div id="chapter-1" class="accordion-collape collapse"
+                        aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                                 <p class="lead">Composites are used in a wide array of industries where high strength, low weight, and durability are essential. In the
+                                     aerospace sector, composites like carbon fiber are used extensively for manufacturing aircraft components such as wings, fuselages,
+                                     and propellers due to their excellent strength-to-weight ratio. The automotive industry uses composites in car bodies, chassis, and
+                                     components to improve fuel efficiency by reducing weight while maintaining strength and safety. In construction, composites are used
+                                     for structural reinforcement, including beams and cladding, offering increased durability and resistance to harsh weather conditions.
+                                     They are also found in marine applications, wind turbine blades, sporting goods, and medical devices, where the combination of materials
+                                     enhances performance and longevity.
+                                </p>
+                                <!-- Application Images -->
+                                <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+                                    <img src="/Images/Composite Application  1.png" alt="Application Example 1" class="img-fluid border border-dark border-1 rounded" style="max-width: 20%;">
+                                    <img src="/Images/Composite Application 2.png" alt="Application Example 2" class="img-fluid border border-dark border-1 rounded" style="max-width: 20%;">
+                                    <img src="/Images/Composite Application 3.png" alt="Application Example 3" class="img-fluid border border-dark border-1 rounded" style="max-width: 20%;">
+                                    <img src="/Images/Composite Application 4.png" class="img-fluid border border-dark border-1 rounded" style="max-width: 20%;">
+                                </div>
+                                     
+                            </div>
+                        </div>
+                    </div>
+                    <!-- properties -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                          <button class="accordion-button p-4" style="background-color:#565757;" type="button" data-bs-toggle="collapse" 
+                          data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                            <div class="d-flex w-100 align-items-center">
+                              <h4 class="mb-0" style="color: rgb(225, 217, 217);;">Properties</h4>
+                              <small class="text-body-secondary ms-auto me-3 fs-6 lead" >When to use me?</small>
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                          <div class="accordion-body">
+                            <p class="lead">Composites offer several unique properties depending on their composition. They are typically strong, lightweight, and resistant to corrosion
+                                 and extreme temperatures. Composites also exhibit high tensile strength, making them suitable for high-stress applications. Their strength-to-weight ratio
+                                 is a key property, allowing for the production of lightweight yet strong structures. Additionally, composites can be tailored for specific applications by
+                                 altering the matrix or reinforcement materials. They can be made resistant to wear, corrosion, and fire, which makes them particularly advantageous in
+                                 industries like automotive and aerospace. Some composites are also electrically conductive or non-conductive, which allows them to be used in electrical
+                                 and electronic applications.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Sustainability -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button  p-4" style="background-color:#565757;" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-3">
+                            <div class="d-flex w-100 align-items-center">
+                                <h4 class="mb-0" style="color: rgb(225, 217, 217);;">Sustainability</h4>
+                                <small class="text-body-secondary ms-auto me-3 fs-6 lead">Will I be sustainable?</small>
+                              </div>
+                            </button>
+                        </h2>
+                        <div id="chapter-3" class="accordion-collape collapse"
+                        aria-labelledby="heading-3" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                                    <p class="lead">Composites can present challenges when it comes to sustainability. While they are durable and have long lifespans, they are often
+                                         difficult to recycle, especially fiber-reinforced composites like carbon fiber and fiberglass. The process of manufacturing composites can be
+                                         energy-intensive, contributing to their environmental footprint. However, there are advancements in the development of more sustainable
+                                         composite materials, including biocomposites made from renewable resources. These composites offer the potential for lower environmental impact,
+                                         as they can be biodegradable or easier to recycle. Efforts are also underway to improve recycling technologies for traditional composites,
+                                         allowing for the repurposing of materials at the end of their lifecycle. In the long term, composites that are both high-performance and
+                                         sustainable may provide significant benefits for reducing the environmental impact of industrial production.
+                                    </p>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item" id="headng-4">
+                            <h2 class="accordion-header" id="heading-4">
+                                <button class="accordion-button p-4" style="background-color:#565757;" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                                <div class="d-flex w-100 align-items-center">
+                                    <h4 class="mb-0" style="color: rgb(225, 217, 217);">Manufacturers</h4>
+                                    <small class="text-body-secondary ms-auto me-3 fs-6 lead">Where to find me?</small>
+                                  </div>  
+                                </button>
+                            </h2>
+                            <div id="chapter-4" class="accordion-collape collapse"
+                            aria-labelledby="heading-4" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p class="lead"> 
+                                        <h4>Hexcel Corporation</h4>
+                                        <p class="lead">
+                                         Hexcel Corporation is a global leader in advanced composite materials, offering carbon fiber, honeycomb, and other composite materials
+                                         for aerospace, automotive, and industrial applications. Their website is <a href="https://www.hexcel.com" target="_blank">https://www.hexcel.com</a>,
+                                         and they can be contacted via <a href="mailto:info@hexcel.com">info@hexcel.com</a>.
+                                        </p>
+                                    </p>
+                                    <p class="lead"> 
+                                        <h4>Toray Industries</h4>
+                                        <p class="lead">
+                                         Toray Industries is a multinational corporation specializing in advanced materials, including carbon fiber and resin systems.
+                                         Their composite materials are used in aerospace, automotive, and various industrial sectors.
+                                         Visit their website at <a href="https://www.toray.com" target="_blank">https://www.toray.com</a> or contact them via <a href="mailto:contact@toray.com">contact@toray.com</a>.
+                                        </p>
+                                    </p>
+                                    <p class="lead"> 
+                                        <h4>Owosso Motor Car Company</h4>
+                                        <p class="lead">
+                                         Owosso is a manufacturer specializing in composite materials for automotive applications, offering lightweight and durable parts designed
+                                         for performance vehicles. Visit their website at <a href="https://www.owosso.com" target="_blank">https://www.owosso.com</a> 
+                                         or contact them via <a href="mailto:support@owosso.com">support@owosso.com</a>.
+                                        </p>
+                                    </p>
+                                    <p class="lead"> 
+                                        <h4>Alibaba</h4>
+                                        <p class="lead">
+                                            Alibaba offers a platform for connecting buyers with manufacturers of composite materials worldwide, including carbon fiber,
+                                            fiberglass, and resin-based composites. Check out their offerings at <a href="https://www.alibaba.com" target="_blank">https://www.alibaba.com</a> for bulk purchasing options.
+                                        </p>
+                                    </p>
+                                    
+                                     
+                                     
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer" style="display: flex; align-items:center;">
+        <div class="ParaImage">
+            <img class="contact-pics" src="/Images/Whatsaap.png" alt="Img 1">
+            <img class="contact-pics" src="/Images/Instagram.png" alt="Img 2">
+            <img class="contact-pics" src="/Images/X.png" alt="Img 3">
+            <img class="contact-pics" src="/Images/LinkedIn (20).png" alt="Img 4">
+            
+        </div>
+        
+        <p style="text-decoration: underline;" class="contact-pics"> <p style=" display: flex; align-items: center; justify-content: center; position: relative; top: 10px; ">&copy; 2024 4CADs | All rights reserved.</p></p></a>
+        <div class="contactus"><a  href="mailto:srs243@njit.edu,gr379@njit.edu,de262@njit.edu,jda64@njit.edu" style="color: black;">Contact Us</a></div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
